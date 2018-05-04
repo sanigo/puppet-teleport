@@ -9,7 +9,6 @@ class teleport::service {
     service { 'teleport':
       ensure   => $teleport::service_ensure,
       enable   => $teleport::service_enable,
-      provider => $teleport::init_style,
     }
   }
 }
